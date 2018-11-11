@@ -1,0 +1,252 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+html, body
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  -webkit-font-smoothing: antialiased
+  color: black
+  -webkit-user-select: none
+  min-height: 100vh
+  background-color: black
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 999
+  display: flex
+  align-items: center
+  justify-content: center
+  visibility: hidden
+  -webkit-backdrop-filter: blur(0)
+  transition: visibility .5s, -webkit-backdrop-filter .5s
+  &.is-active
+    visibility: visible
+    -webkit-backdrop-filter: blur(10px)
+    .modal__background
+      opacity: 1
+    .modal__card
+      opacity: 1
+      transform: scale(1)
+  &__background
+    position: absolute
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0,0,.2)
+    opacity: 0
+    transition: opacity .5s
+  &__card
+    margin: 16px 8px
+    width: 100%
+    overflow: scroll
+    background-color: rgba(255,255,255,.9)
+    -webkit-backdrop-filter: blur(10px)
+    border-radius: 13px
+    overflow: hidden
+    opacity: 0
+    transform: scale(.5)
+    transition: opacity .5s, transform .5s cubic-bezier(.36,.98,.31,1.07)
+    &__title
+      font-size: 22px
+      font-weight: 600
+      padding: 12px 12px 8px
+      border-bottom: 1px solid rgba(0,0,0,.2)
+      text-align: center
+    &__body
+      padding: 8px 12px 12px
+      text-align: center
+      .button
+        display: flex
+        padding: 5px
+        color: white
+        background-color: #1da1f2
+        font-weight: 600
+        border-radius: 8px
+        justify-content: center
+        margin-bottom: 5px
+
+.background
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-image: url('images/background.jpg')
+  background-size: cover
+  z-index: 0
+.top-right-bar
+  position: fixed
+  top: 36.3333px
+  right: 28.3333px
+  width: 46px
+  height: 2.3333px
+  background-color: rgba(255,255,255,.6)
+  border-radius: 4.6666px
+  z-index: 100
+.swipe-text
+  position: fixed
+  bottom: 44px
+  left: 0
+  right: 0
+  line-height: 20px
+  font-size: 17px
+  font-weight: 600
+  text-align: center
+  z-index: 50
+  opacity: 0
+.flashlight-button
+  position: fixed
+  bottom: 25px
+  left: 21px
+  display: flex
+  width: 100px
+  height: 100px
+  justify-content: center
+  align-items: center
+  z-index: 100
+  .flashlight-icon-wrapper
+    display: flex
+    width: 50px
+    height: 50px
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: rgba(0, 0, 0, 0.2)
+    -webkit-backdrop-filter: blur(100px)
+    transition: transform .1s ease-out
+    will-change: transform
+    svg
+      width: 10px
+.camera-button
+  position: fixed
+  bottom: 25px
+  right: 21px
+  display: flex
+  width: 100px
+  height: 100px
+  justify-content: center
+  align-items: center
+  z-index: 100
+  .camera-icon-wrapper
+    display: flex
+    width: 50px
+    height: 50px
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: rgba(0, 0, 0, 0.2)
+    -webkit-backdrop-filter: blur(100px)
+    transition: transform .1s ease-out
+    will-change: transform
+    svg
+      width: 25px
+
+.main
+  position: relative
+  .lock-icon-container
+    height: 1092px
+    position: absolute
+    top: -1000px
+    left: calc(50% - 11.5px)
+    width: 23px
+    .lock-icon
+      position: -webkit-sticky
+      position: sticky
+      top: 58px
+      display: block
+      width: 23px
+      height: 34px
+      cursor: pointer
+  .clock
+    position: absolute
+    top: 107px
+    left: 0
+    right: 0
+    height: 80px
+    line-height: 80px
+    font-size: 80px
+    font-weight: 200
+    text-align: center
+    color: white
+    transform: translate3d(0, 0, 0)
+  .date
+    position: absolute
+    top: 193px
+    left: 0
+    right: 0
+    height: 22px
+    line-height: 22px
+    font-size: 22px
+    text-align: center
+    color: white
+    transform: translate3d(0, 0, 0)
+  .notification-list
+    padding: 240px 8px 150px
+    .notification
+      position: relative
+      overflow: visible
+      height: 0
+      margin-bottom: 0
+      transition: height 1s cubic-bezier(.36,.98,.31,1.07), margin-bottom 1s cubic-bezier(.36,.98,.57,1.9)
+      will-change: height, margin-bottom
+      &.appear
+      &.active-appear
+      &.enter
+      &.active-enter
+        height: 87px
+        margin-bottom: 8px
+        .notification-card
+          transform: scale(1)
+      &.done-enter
+        height: 87px
+        margin-bottom: 8px
+        .notification-card
+          transform: scale(1)
+      &.exit
+      &.active-exit
+      &.done-exit
+      &-card
+        background-color: rgba(255, 255, 255, 0.5)
+        -webkit-backdrop-filter: blur(12px)
+        border-radius: 13px
+        padding: 10px
+        transform: scale(0)
+        transition: transform 1s cubic-bezier(.36,.98,.31,1.07)
+        will-change: transform
+        &__header
+          height: 20px
+          display: flex
+          font-size: 13px
+          padding-right: 5px
+          padding-bottom: 8px
+          &__app-icon
+            width: 20px
+            height: 20px
+            border-radius: 4px
+            margin-right: 7px
+            background-color: rgba(255, 255, 255, .3)
+            &.twitter
+              background-image: url('images/app-icon-twitter.png')
+              background-size: 20px 20px
+          &__app-name
+            flex: 1
+            padding: 2px 0
+          &__timestamp
+            padding: 2px 0
+        &__body
+          padding: 0 2px 1px
+          font-size: 15px
+          line-height: 19px
+          &__title
+            font-weight: 600
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+          &__content
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
