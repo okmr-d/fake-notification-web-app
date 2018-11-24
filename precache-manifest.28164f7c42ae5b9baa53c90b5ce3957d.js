@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/fake-notification-web-app/static/css/main.47aad9bf.chunk.css"
   },
   {
-    "revision": "3556e6d3433bb45b352e0cb7da387264",
+    "revision": "6b6bd1246c36ee8302c295dd94f308a2",
     "url": "/fake-notification-web-app/index.html"
   }
 ];
