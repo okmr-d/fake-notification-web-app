@@ -9,7 +9,12 @@ html, body
   -webkit-user-select: none
   min-height: 100vh
   background-color: black
-
+a
+  display: inline-block
+  color: #3273dc
+  line-height: 33px
+  cursor: pointer
+  text-decoration: underline
 .modal
   position: fixed
   top: 0
@@ -35,20 +40,54 @@ html, body
     position: absolute
     width: 100vw
     height: 100vh
-    background-color: rgba(0,0,0,.2)
+    background-color: rgba(0, 0, 0, .5)
     opacity: 0
     transition: opacity .5s
-  &__card
-    margin: 16px 8px
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  &__content
+    margin: 0 8px
     width: 100%
+  &__card
+    margin-bottom: 8px
     overflow: scroll
-    background-color: rgba(255,255,255,.9)
-    -webkit-backdrop-filter: blur(10px)
+    background-color: white
     border-radius: 13px
     overflow: hidden
     opacity: 0
     transform: scale(.5)
     transition: opacity .5s, transform .5s cubic-bezier(.36,.98,.31,1.07)
+    &.explanation
+      position: absolute
+      right: 8px
+      left: 8px
+      bottom: 12px
+      overflow: visible
+      p
+        margin-bottom: 5px
+      &::before
+        content: ''
+        position: absolute
+        bottom: -8px
+        left: calc(50% - 8px)
+        width: 16px
+        height: 16px
+        background-color: white
+        transform: rotate(45deg)
+      .share-icon
+        display: inline-block
+        vertical-align: middle
+        width: 22px
+        height: 22px
+        background-image: url('images/share-icon.png')
+        background-size: contain
+      .add-home-icon
+        display: inline-block
+        vertical-align: middle
+        width: 60px
+        height: 90px
+        background-image: url('images/add-home.png')
+        background-size: contain
+        border: 1px solid #ddd
     &__title
       font-size: 22px
       font-weight: 600
@@ -60,14 +99,13 @@ html, body
       text-align: center
       .button
         display: flex
-        padding: 5px
         color: white
         background-color: #1da1f2
         font-weight: 600
         border-radius: 8px
         justify-content: center
         margin-bottom: 5px
-
+        text-decoration: none
 .background
   position: fixed
   top: 0
@@ -161,6 +199,18 @@ html, body
       width: 23px
       height: 34px
       cursor: pointer
+    .menu-text
+      position: -webkit-sticky
+      position: sticky
+      top: 58px
+      display: block
+      width: 150px
+      height: 34px
+      line-height: 34px
+      padding-left: 40px
+      font-size: 20px
+      font-weight: 800
+      color: white
   .clock
     position: absolute
     top: 107px
@@ -250,3 +300,14 @@ html, body
             white-space: nowrap
             overflow: hidden
             text-overflow: ellipsis
+.share-tweet
+  line-height: 20px
+  &-icon
+    display: inline-block
+    vertical-align: top
+    width: 20px
+    height: 20px
+    border-radius: 4px
+    margin-right: 7px
+    background-image: url('images/app-icon-twitter.png')
+    background-size: 20px 20px

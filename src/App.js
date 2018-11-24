@@ -27,226 +27,106 @@ const getTimeForDisplay = () => {
 }
 
 const twitterNotifications = [
-  { title: '福田さんがいいねしました:', content: '', delay: 200 },
-  { title: '西村さんがいいねしました:', content: '', delay: 200 },
-  { title: '新井さんがいいねしました:', content: '', delay: 200 },
-  { title: '藤田さんがいいねしました:', content: '', delay: 200 },
-  { title: '松本さんがいいねしました:', content: '', delay: 200 },
-  { title: '森田さんがいいねしました:', content: '', delay: 200 },
-  { title: '中山さんがいいねしました:', content: '', delay: 200 },
-  { title: '石川さんがいいねしました:', content: '', delay: 200 },
-  { title: '木村さんがいいねしました:', content: '', delay: 200 },
-  { title: '工藤さんがいいねしました:', content: '', delay: 200 },
-  { title: '杉山さんがいいねしました:', content: '', delay: 200 },
-  { title: '山田さんがいいねしました:', content: '', delay: 200 },
-  { title: '千葉さんがいいねしました:', content: '', delay: 200 },
-  { title: '石井さんがいいねしました:', content: '', delay: 200 },
-  { title: '松尾さんがいいねしました:', content: '', delay: 200 },
-  { title: '中島さんがいいねしました:', content: '', delay: 200 },
-  { title: '岩崎さんがいいねしました:', content: '', delay: 200 },
-  { title: '橋本さんがいいねしました:', content: '', delay: 200 },
-  { title: '武田さんがいいねしました:', content: '', delay: 200 },
-  { title: '小野さんがいいねしました:', content: '', delay: 200 },
-  { title: '太田さんがいいねしました:', content: '', delay: 200 },
+  { title: '佐藤さんがいいねしました:', content: '', delay: 200 },
   { title: '鈴木さんがいいねしました:', content: '', delay: 200 },
-  { title: '阿部さんがいいねしました:', content: '', delay: 200 },
-  { title: '中川さんがいいねしました:', content: '', delay: 200 },
-  { title: '中野さんがいいねしました:', content: '', delay: 200 },
-  { title: '井上さんがいいねしました:', content: '', delay: 200 },
-  { title: '高田さんがいいねしました:', content: '', delay: 200 },
-  { title: '加藤さんがいいねしました:', content: '', delay: 200 },
-  { title: '藤本さんがいいねしました:', content: '', delay: 200 },
+  { title: '高橋さんがいいねしました:', content: '', delay: 200 },
+  { title: '田中さんがいいねしました:', content: '', delay: 200 },
+  { title: '伊藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '渡辺さんがいいねしました:', content: '', delay: 200 },
+  { title: '山本さんがいいねしました:', content: '', delay: 200 },
   { title: '中村さんがいいねしました:', content: '', delay: 200 },
-  { title: '宮本さんがいいねしました:', content: '', delay: 200 },
-  { title: '前田さんがいいねしました:', content: '', delay: 200 },
-  { title: '高木さんがいいねしました:', content: '', delay: 200 },
-  { title: '小川さんがいいねしました:', content: '', delay: 200 },
-  { title: '山崎さんがいいねしました:', content: '', delay: 200 },
-  { title: '大野さんがいいねしました:', content: '', delay: 200 },
-  { title: '小山さんがいいねしました:', content: '', delay: 200 },
+  { title: '小林さんがいいねしました:', content: '', delay: 200 },
+  { title: '加藤さんがいいねしました:', content: '', delay: 200 },
   { title: '吉田さんがいいねしました:', content: '', delay: 200 },
-  { title: '丸山さんがいいねしました:', content: '', delay: 200 },
+  { title: '山田さんがいいねしました:', content: '', delay: 200 },
+  { title: '佐々木さんがいいねしました:', content: '', delay: 200 },
+  { title: '山口さんがいいねしました:', content: '', delay: 200 },
+  { title: '松本さんがいいねしました:', content: '', delay: 200 },
+  { title: '井上さんがいいねしました:', content: '', delay: 200 },
+  { title: '木村さんがいいねしました:', content: '', delay: 200 },
+  { title: '林さんがいいねしました:', content: '', delay: 200 },
+  { title: '斎藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '清水さんがいいねしました:', content: '', delay: 200 },
+  { title: '山崎さんがいいねしました:', content: '', delay: 200 },
+  { title: '森さんがいいねしました:', content: '', delay: 200 },
+  { title: '池田さんがいいねしました:', content: '', delay: 200 },
+  { title: '橋本さんがいいねしました:', content: '', delay: 200 },
+  { title: '阿部さんがいいねしました:', content: '', delay: 200 },
+  { title: '石川さんがいいねしました:', content: '', delay: 200 },
+  { title: '山下さんがいいねしました:', content: '', delay: 200 },
+  { title: '中島さんがいいねしました:', content: '', delay: 200 },
+  { title: '石井さんがいいねしました:', content: '', delay: 200 },
+  { title: '小川さんがいいねしました:', content: '', delay: 200 },
+  { title: '前田さんがいいねしました:', content: '', delay: 200 },
   { title: '岡田さんがいいねしました:', content: '', delay: 200 },
-  { title: '横山さんがいいねしました:', content: '', delay: 200 },
+  { title: '長谷川さんがいいねしました:', content: '', delay: 200 },
+  { title: '藤田さんがいいねしました:', content: '', delay: 200 },
+  { title: '後藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '近藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '村上さんがいいねしました:', content: '', delay: 200 },
+  { title: '遠藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '青木さんがいいねしました:', content: '', delay: 200 },
+  { title: '坂本さんがいいねしました:', content: '', delay: 200 },
+  { title: '斉藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '福田さんがいいねしました:', content: '', delay: 200 },
+  { title: '太田さんがいいねしました:', content: '', delay: 200 },
+  { title: '西村さんがいいねしました:', content: '', delay: 200 },
+  { title: '藤井さんがいいねしました:', content: '', delay: 200 },
+  { title: '岡本さんがいいねしました:', content: '', delay: 200 },
   { title: '藤原さんがいいねしました:', content: '', delay: 200 },
+  { title: '金子さんがいいねしました:', content: '', delay: 200 },
+  { title: '三浦さんがいいねしました:', content: '', delay: 200 },
+  { title: '中野さんがいいねしました:', content: '', delay: 200 },
+  { title: '中川さんがいいねしました:', content: '', delay: 200 },
+  { title: '原田さんがいいねしました:', content: '', delay: 200 },
+  { title: '松田さんがいいねしました:', content: '', delay: 200 },
+  { title: '竹内さんがいいねしました:', content: '', delay: 200 },
+  { title: '小野さんがいいねしました:', content: '', delay: 200 },
+  { title: '田村さんがいいねしました:', content: '', delay: 200 },
+  { title: '中山さんがいいねしました:', content: '', delay: 200 },
+  { title: '和田さんがいいねしました:', content: '', delay: 200 },
+  { title: '石田さんがいいねしました:', content: '', delay: 200 },
+  { title: '森田さんがいいねしました:', content: '', delay: 200 },
   { title: '上田さんがいいねしました:', content: '', delay: 200 },
   { title: '原さんがいいねしました:', content: '', delay: 200 },
-  { title: '小林さんがいいねしました:', content: '', delay: 200 },
-  { title: '渡辺さんがいいねしました:', content: '', delay: 200 },
   { title: '内田さんがいいねしました:', content: '', delay: 200 },
-  { title: '坂本さんがいいねしました:', content: '', delay: 200 },
   { title: '柴田さんがいいねしました:', content: '', delay: 200 },
-  { title: '田村さんがいいねしました:', content: '', delay: 200 },
-  { title: '森さんがいいねしました:', content: '', delay: 200 },
-  { title: '杉本さんがいいねしました:', content: '', delay: 200 },
-  { title: '林さんがいいねしました:', content: '', delay: 200 },
-  { title: '松田さんがいいねしました:', content: '', delay: 200 },
-  { title: '村田さんがいいねしました:', content: '', delay: 200 },
-  { title: '原田さんがいいねしました:', content: '', delay: 200 },
-  { title: '野村さんがいいねしました:', content: '', delay: 200 },
-  { title: '金子さんがいいねしました:', content: '', delay: 200 },
-  { title: '木下さんがいいねしました:', content: '', delay: 200 },
-  { title: '長谷川さんがいいねしました:', content: '', delay: 200 },
-  { title: '佐々木さんがいいねしました:', content: '', delay: 200 },
-  { title: '久保さんがいいねしました:', content: '', delay: 200 },
-  { title: '三浦さんがいいねしました:', content: '', delay: 200 },
-  { title: '山下さんがいいねしました:', content: '', delay: 200 },
-  { title: '野口さんがいいねしました:', content: '', delay: 200 },
-  { title: '河野さんがいいねしました:', content: '', delay: 200 },
-  { title: '平野さんがいいねしました:', content: '', delay: 200 },
-  { title: '山本さんがいいねしました:', content: '', delay: 200 },
-  { title: '大塚さんがいいねしました:', content: '', delay: 200 },
+  { title: '酒井さんがいいねしました:', content: '', delay: 200 },
+  { title: '宮崎さんがいいねしました:', content: '', delay: 200 },
+  { title: '横山さんがいいねしました:', content: '', delay: 200 },
+  { title: '高木さんがいいねしました:', content: '', delay: 200 },
+  { title: '安藤さんがいいねしました:', content: '', delay: 200 },
+  { title: '宮本さんがいいねしました:', content: '', delay: 200 },
+  { title: '大野さんがいいねしました:', content: '', delay: 200 },
+  { title: '小島さんがいいねしました:', content: '', delay: 200 },
+  { title: '工藤さんがいいねしました:', content: '', delay: 200 },
   { title: '谷口さんがいいねしました:', content: '', delay: 200 },
-  { title: '桜井さんがいいねしました:', content: '', delay: 200 },
-  { title: '青木さんがいいねしました:', content: '', delay: 200 },
-  { title: '上野さんがいいねしました:', content: '', delay: 200 },
-  { title: '遠藤さんがいいねしました:', content: '', delay: 200 },
   { title: '今井さんがいいねしました:', content: '', delay: 200 },
-  { title: '村上さんがいいねしました:', content: '', delay: 200 },
-  { title: '渡部さんがいいねしました:', content: '', delay: 200 },
-  { title: '高野さんがいいねしました:', content: '', delay: 200 },
-  { title: '吉川さんがいいねしました:', content: '', delay: 200 },
-  { title: '山内さんがいいねしました:', content: '', delay: 200 },
-  { title: '西田さんがいいねしました:', content: '', delay: 200 },
-  { title: '菊池さんがいいねしました:', content: '', delay: 200 },
-  { title: '飯田さんがいいねしました:', content: '', delay: 200 },
-  { title: '小松さんがいいねしました:', content: '', delay: 200 },
-  { title: '西川さんがいいねしました:', content: '', delay: 200 },
-  { title: '北村さんがいいねしました:', content: '', delay: 200 },
-  { title: '安田さんがいいねしました:', content: '', delay: 200 },
-  { title: '五十嵐さんがいいねしました:', content: '', delay: 200 },
-  { title: '川口さんがいいねしました:', content: '', delay: 200 },
-  { title: '平田さんがいいねしました:', content: '', delay: 200 },
-  { title: '関さんがいいねしました:', content: '', delay: 200 },
-  { title: '中田さんがいいねしました:', content: '', delay: 200 },
-  { title: '久保田さんがいいねしました:', content: '', delay: 200 },
-  { title: '東さんがいいねしました:', content: '', delay: 200 },
-  { title: '服部さんがいいねしました:', content: '', delay: 200 },
-  { title: '岩田さんがいいねしました:', content: '', delay: 200 },
-  { title: '川崎さんがいいねしました:', content: '', delay: 200 },
-  { title: '土屋さんがいいねしました:', content: '', delay: 200 },
-  { title: '福島さんがいいねしました:', content: '', delay: 200 },
-  { title: '本田さんがいいねしました:', content: '', delay: 200 },
-  { title: '樋口さんがいいねしました:', content: '', delay: 200 },
-  { title: '辻さんがいいねしました:', content: '', delay: 200 },
-  { title: '秋山さんがいいねしました:', content: '', delay: 200 },
-  { title: '田口さんがいいねしました:', content: '', delay: 200 },
-  { title: '永井さんがいいねしました:', content: '', delay: 200 },
-  { title: '山中さんがいいねしました:', content: '', delay: 200 },
-  { title: '中西さんがいいねしました:', content: '', delay: 200 },
-  { title: '吉村さんがいいねしました:', content: '', delay: 200 },
-  { title: '川上さんがいいねしました:', content: '', delay: 200 },
-  { title: '松岡さんがいいねしました:', content: '', delay: 200 },
-  { title: '浜田さんがいいねしました:', content: '', delay: 200 },
-  { title: '大橋さんがいいねしました:', content: '', delay: 200 },
-  { title: '石原さんがいいねしました:', content: '', delay: 200 },
-  { title: '馬場さんがいいねしました:', content: '', delay: 200 },
-  { title: '森本さんがいいねしました:', content: '', delay: 200 },
-  { title: '矢野さんがいいねしました:', content: '', delay: 200 },
-  { title: '松下さんがいいねしました:', content: '', delay: 200 },
-  { title: '浅野さんがいいねしました:', content: '', delay: 200 },
-  { title: '星野さんがいいねしました:', content: '', delay: 200 },
-  { title: '吉岡さんがいいねしました:', content: '', delay: 200 },
-  { title: '大久保さんがいいねしました:', content: '', delay: 200 },
-  { title: '小池さんがいいねしました:', content: '', delay: 200 },
-  { title: '野田さんがいいねしました:', content: '', delay: 200 },
-  { title: '荒木さんがいいねしました:', content: '', delay: 200 },
-  { title: '松浦さんがいいねしました:', content: '', delay: 200 },
-  { title: '熊谷さんがいいねしました:', content: '', delay: 200 },
-  { title: '大谷さんがいいねしました:', content: '', delay: 200 },
-  { title: '内藤さんがいいねしました:', content: '', delay: 200 },
-  { title: '黒田さんがいいねしました:', content: '', delay: 200 },
-  { title: '尾崎さんがいいねしました:', content: '', delay: 200 },
-  { title: '望月さんがいいねしました:', content: '', delay: 200 },
-  { title: '川村さんがいいねしました:', content: '', delay: 200 },
-  { title: '永田さんがいいねしました:', content: '', delay: 200 },
-  { title: '松村さんがいいねしました:', content: '', delay: 200 },
-  { title: '堀さんがいいねしました:', content: '', delay: 200 },
-  { title: '田辺さんがいいねしました:', content: '', delay: 200 },
-  { title: '菅野さんがいいねしました:', content: '', delay: 200 },
-  { title: '荒井さんがいいねしました:', content: '', delay: 200 },
-  { title: '大島さんがいいねしました:', content: '', delay: 200 },
-  { title: '平井さんがいいねしました:', content: '', delay: 200 },
-  { title: '西山さんがいいねしました:', content: '', delay: 200 },
-  { title: '早川さんがいいねしました:', content: '', delay: 200 },
-  { title: '栗原さんがいいねしました:', content: '', delay: 200 },
-  { title: '広瀬さんがいいねしました:', content: '', delay: 200 },
-  { title: '横田さんがいいねしました:', content: '', delay: 200 },
-  { title: '石橋さんがいいねしました:', content: '', delay: 200 },
-  { title: '岩本さんがいいねしました:', content: '', delay: 200 },
-  { title: '萩原さんがいいねしました:', content: '', delay: 200 },
-  { title: '片山さんがいいねしました:', content: '', delay: 200 },
-  { title: '関口さんがいいねしました:', content: '', delay: 200 },
-  { title: '宮田さんがいいねしました:', content: '', delay: 200 },
-  { title: '大石さんがいいねしました:', content: '', delay: 200 },
-  { title: '本間さんがいいねしました:', content: '', delay: 200 },
-  { title: '高山さんがいいねしました:', content: '', delay: 200 },
-  { title: '須藤さんがいいねしました:', content: '', delay: 200 },
-  { title: '吉野さんがいいねしました:', content: '', delay: 200 },
-  { title: '岡崎さんがいいねしました:', content: '', delay: 200 },
-  { title: '小田さんがいいねしました:', content: '', delay: 200 },
-  { title: '鎌田さんがいいねしました:', content: '', delay: 200 },
-  { title: '伊東さんがいいねしました:', content: '', delay: 200 },
-  { title: '上原さんがいいねしました:', content: '', delay: 200 },
-  { title: '篠原さんがいいねしました:', content: '', delay: 200 },
-  { title: '小西さんがいいねしました:', content: '', delay: 200 },
-  { title: '松原さんがいいねしました:', content: '', delay: 200 },
-  { title: '福井さんがいいねしました:', content: '', delay: 200 },
-  { title: '古賀さんがいいねしました:', content: '', delay: 200 },
-  { title: '大森さんがいいねしました:', content: '', delay: 200 },
-  { title: '成田さんがいいねしました:', content: '', delay: 200 },
-  { title: '小泉さんがいいねしました:', content: '', delay: 200 },
-  { title: '南さんがいいねしました:', content: '', delay: 200 },
-  { title: '奥村さんがいいねしました:', content: '', delay: 200 },
-  { title: '内山さんがいいねしました:', content: '', delay: 200 },
-  { title: '三宅さんがいいねしました:', content: '', delay: 200 },
-  { title: '桑原さんがいいねしました:', content: '', delay: 200 },
-  { title: '沢田さんがいいねしました:', content: '', delay: 200 },
-  { title: '岡さんがいいねしました:', content: '', delay: 200 },
-  { title: '川島さんがいいねしました:', content: '', delay: 200 },
-  { title: '片岡さんがいいねしました:', content: '', delay: 200 },
-  { title: '富田さんがいいねしました:', content: '', delay: 200 },
-  { title: '奥田さんがいいねしました:', content: '', delay: 200 },
-  { title: '八木さんがいいねしました:', content: '', delay: 200 },
-  { title: '杉浦さんがいいねしました:', content: '', delay: 200 },
-  { title: '松永さんがいいねしました:', content: '', delay: 200 },
-  { title: '北川さんがいいねしました:', content: '', delay: 200 },
-  { title: '小沢さんがいいねしました:', content: '', delay: 200 },
-  { title: '関根さんがいいねしました:', content: '', delay: 200 },
-  { title: '平山さんがいいねしました:', content: '', delay: 200 },
-  { title: '牧野さんがいいねしました:', content: '', delay: 200 },
-  { title: '河合さんがいいねしました:', content: '', delay: 200 },
-  { title: '白石さんがいいねしました:', content: '', delay: 200 },
-  { title: '今村さんがいいねしました:', content: '', delay: 200 },
-  { title: '寺田さんがいいねしました:', content: '', delay: 200 },
-  { title: '青山さんがいいねしました:', content: '', delay: 200 },
-  { title: '中尾さんがいいねしました:', content: '', delay: 200 },
-  { title: '小倉さんがいいねしました:', content: '', delay: 200 },
-  { title: '渋谷さんがいいねしました:', content: '', delay: 200 },
-  { title: '上村さんがいいねしました:', content: '', delay: 200 },
-  { title: '小野寺さんがいいねしました:', content: '', delay: 200 },
-  { title: '大山さんがいいねしました:', content: '', delay: 200 },
-  { title: '岡村さんがいいねしました:', content: '', delay: 200 },
-  { title: '坂口さんがいいねしました:', content: '', delay: 200 },
-  { title: '足立さんがいいねしました:', content: '', delay: 200 },
-  { title: '多田さんがいいねしました:', content: '', delay: 200 },
-  { title: '天野さんがいいねしました:', content: '', delay: 200 },
-  { title: '根本さんがいいねしました:', content: '', delay: 200 },
-  { title: '佐久間さんがいいねしました:', content: '', delay: 200 },
-  { title: '豊田さんがいいねしました:', content: '', delay: 200 },
-  { title: '村山さんがいいねしました:', content: '', delay: 200 },
-  { title: '角田さんがいいねしました:', content: '', delay: 200 },
-  { title: '飯塚さんがいいねしました:', content: '', delay: 200 },
-  { title: '田島さんがいいねしました:', content: '', delay: 200 },
-  { title: '西さんがいいねしました:', content: '', delay: 200 },
-  { title: '武藤さんがいいねしました:', content: '', delay: 200 },
-  { title: '竹田さんがいいねしました:', content: '', delay: 200 },
-  { title: '宮下さんがいいねしました:', content: '', delay: 200 },
-  { title: '白井さんがいいねしました:', content: '', delay: 200 },
-  { title: '塚本さんがいいねしました:', content: '', delay: 200 },
-  { title: '児玉さんがいいねしました:', content: '', delay: 200 },
-  { title: '坂田さんがいいねしました:', content: '', delay: 200 },
-  { title: '坂井さんがいいねしました:', content: '', delay: 200 },
+  { title: '高田さんがいいねしました:', content: '', delay: 200 },
+  { title: '増田さんがいいねしました:', content: '', delay: 200 },
+  { title: '丸山さんがいいねしました:', content: '', delay: 200 },
+  { title: '杉山さんがいいねしました:', content: '', delay: 200 },
+  { title: '村田さんがいいねしました:', content: '', delay: 200 },
+  { title: '大塚さんがいいねしました:', content: '', delay: 200 },
+  { title: '新井さんがいいねしました:', content: '', delay: 200 },
+  { title: '藤本さんがいいねしました:', content: '', delay: 200 },
+  { title: '小山さんがいいねしました:', content: '', delay: 200 },
+  { title: '平野さんがいいねしました:', content: '', delay: 200 },
+  { title: '河野さんがいいねしました:', content: '', delay: 200 },
+  { title: '上野さんがいいねしました:', content: '', delay: 200 },
+  { title: '武田さんがいいねしました:', content: '', delay: 200 },
+  { title: '野口さんがいいねしました:', content: '', delay: 200 },
+  { title: '松井さんがいいねしました:', content: '', delay: 200 },
+  { title: '千葉さんがいいねしました:', content: '', delay: 200 },
+  { title: '菅原さんがいいねしました:', content: '', delay: 200 },
+  { title: '岩崎さんがいいねしました:', content: '', delay: 200 },
+  { title: '久保さんがいいねしました:', content: '', delay: 200 },
+  { title: '木下さんがいいねしました:', content: '', delay: 200 },
+  { title: '佐野さんがいいねしました:', content: '', delay: 200 },
+  { title: '野村さんがいいねしました:', content: '', delay: 200 },
+  { title: '松尾さんがいいねしました:', content: '', delay: 200 },
+  { title: '菊地さんがいいねしました:', content: '', delay: 200 },
+  { title: '杉本さんがいいねしました:', content: '', delay: 200 },
 ]
 
 class App extends Component {
@@ -254,14 +134,16 @@ class App extends Component {
     super(props);
     this.state = {
       ...getTimeForDisplay(),
-      isOpenSettings: false,
       notificationList: [],
       isFlashlightOn: false,
       willToggleFlashlight: false,
       flashlightIconTransform: `scale(1.0)`,
       flashlightIconBgColor: `rgba(0, 0, 0, 0.2)`,
       cameraIconTransform: `scale(1.0)`,
-      cameraIconBgColor: `rgba(0, 0, 0, 0.2)`
+      cameraIconBgColor: `rgba(0, 0, 0, 0.2)`,
+      isOpenExplanation: false,
+      isOpenMenu: false,
+      showMenuText: false
     };
 
     this.addNotification = this.addNotification.bind(this);
@@ -283,16 +165,9 @@ class App extends Component {
       });
     }, 1000);
 
-    // 最初の通知
     window.setTimeout(() => {
-      this.addNotification({appName: 'ご注意', title: 'iPhoneX向けに作成されています', content: 'レイアウトが崩れてても許してね'});
+      this.setState({ isOpenExplanation: true })
     }, 1000);
-    window.setTimeout(() => {
-      this.addNotification({appName: '使い方②', title: '通知モードを選びます', content: '時計の上の鍵のアイコン｢🔒｣をタップしてね'});
-    }, 1500);
-    window.setTimeout(() => {
-      this.addNotification({appName: '使い方①', title: '全画面モードで開くと本物っぽくなります', content: 'Safariのメニューから｢ホーム画面に追加｣してね'});
-    }, 2000);
 
     // 懐中電灯ボタンとカメラボタンはおまけ
     const $flashlightButton = document.getElementById('flashlight-button');
@@ -313,11 +188,13 @@ class App extends Component {
   }
 
   startTwitterMode() {
-    const tweet = window.prompt('ツイートを入力してください')
+    const tweet = window.prompt('表示したい文章を入力してください')
     if (tweet) {
       this.setState({
         notificationList: [],
-        isOpenSettings: false
+        isOpenMenu: false,
+        isOpenExplanation: false,
+        showMenuText: false
       });
 
       let delay = 3000;
@@ -383,7 +260,9 @@ class App extends Component {
     const {
       timeStr,
       dateStr,
-      isOpenSettings,
+      isOpenMenu,
+      isOpenExplanation,
+      showMenuText,
       notificationList,
       isFlashlightOn,
       flashlightIconTransform,
@@ -396,7 +275,7 @@ class App extends Component {
       <React.Fragment>
         <div className="background"></div>
         <CSSTransition
-          in={isOpenSettings}
+          in={isOpenMenu}
           timeout={600}
           classNames={{
             appear: 'modal',
@@ -412,19 +291,95 @@ class App extends Component {
           <div className="modal">
             <div
               className="modal__background"
-              onClick={() => this.setState({ isOpenSettings: false })}
+              onClick={() => this.setState({ isOpenMenu: false })}
             />
-            <div className="modal__card">
-              <div className="modal__card__title">通知モード選択</div>
-              <div className="modal__card__body">
-                <a
-                  className="button"
-                  onClick={this.startTwitterMode}
-                >
-                  <span role="img" aria-label="emoji"></span>Twitterいいねたくさんモード
-                </a>
-                <div>
-                  <small>（※現在1モードだけ）</small>
+            <div className="modal__content">
+              <div className="modal__card">
+                <div className="modal__card__title">メニュー</div>
+                <div className="modal__card__body">
+                  <a
+                    className="button"
+                    onClick={this.startTwitterMode}
+                  >
+                    いいねたくさんモード
+                  </a>
+                  <small style={{color: 'grey'}}>※ 動きがカクカクする場合は「低電力モードを解除」や「他のアプリを終了」をお試しください。</small>
+                </div>
+              </div>
+              <div className="modal__card">
+                <div className="modal__card__body">
+                  <p style={{ lineHeight: '40px', fontWeight: 800 }}>《録画した画面をシェアして楽しもう！》</p>
+                  <p><small>「 #通知止まらんw 」をつけてツイートしてね！</small></p>
+                  <br />
+                  <a
+                    onClick={() => this.setState({
+                      isOpenMenu: false,
+                      isOpenExplanation: true
+                    })}
+                  >
+                    全画面表示にする方法
+                  </a>
+                  <br />
+                  <a href="https://support.apple.com/ja-jp/HT207935" target="_blank">
+                    iPhoneの画面を録画する方法
+                  </a>
+                  <br />
+                  <br />
+                  <a
+                    href="https://twitter.com/share?url=https://bit.ly/2Bvyx3i&amp;text=+%0a%23%e9%80%9a%e7%9f%a5%e6%ad%a2%e3%81%be%e3%82%89%e3%82%93w"
+                    onclick="window.open(encodeURI(decodeURI(this.href)), 'TWwindow', 'width=560, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+                    target="_blank"
+                    className="share-tweet"
+                  >
+                    <span className="share-tweet-icon" />このサイトをTwitterでシェア
+                  </a>
+                  <br />
+                  <br />
+                  <small>開発者：<a href="https://twitter.com/okumura_daiki" target="_blank">@okumura_daiki</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CSSTransition>
+        <CSSTransition
+          in={isOpenExplanation}
+          timeout={600}
+          classNames={{
+            appear: 'modal',
+            appearActive: 'modal',
+            enter: 'modal',
+            enterActive: 'modal is-active',
+            enterDone: 'modal is-active',
+            exit: 'modal',
+            exitActive: 'modal',
+            exitDone: 'modal',
+          }}
+        >
+          <div className="modal">
+            <div
+              className="modal__background"
+              onClick={() => this.setState({
+                isOpenExplanation: false,
+                showMenuText: true
+              })}
+              style={{ backgroundImage: null }}
+            />
+            <div className="modal__content">
+              <div className="modal__card explanation">
+                <div className="modal__card__title">はじめに</div>
+                <div className="modal__card__body">
+                  <p>【注意】iPhone Safariでご覧ください。<br /><small>iPhone以外では正常に動作しない場合があります。</small></p>
+                  <p>① <span className="share-icon" /> から <span className="add-home-icon" /> を選択します。</p>
+                  <p>② ホーム画面に追加されたアプリを開くと全画面表示になります。</p>
+                  <a
+                    style={{display: 'inline-block', padding: '10px', color: 'grey'}}
+                    onClick={() => this.setState({
+                      isOpenExplanation: false,
+                      showMenuText: true
+                    })}
+                  >
+                    × 閉じる
+                  </a>
                 </div>
               </div>
             </div>
@@ -488,9 +443,15 @@ class App extends Component {
             ))}
           </TransitionGroup>
           <div className="lock-icon-container">
+            {showMenuText &&
+              <div className="menu-text">← メニュー</div>
+            }
             <a
               className="lock-icon"
-              onClick={() => this.setState({ isOpenSettings: true })}
+              onClick={() => this.setState({
+                showMenuText: false,
+                isOpenMenu: true
+              })}
             >
               <LockIcon fill={"#fff"} />
             </a>
