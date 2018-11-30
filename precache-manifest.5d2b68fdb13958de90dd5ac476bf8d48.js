@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/fake-notification-web-app/static/js/runtime~main.1ab9280f.js"
   },
   {
-    "revision": "43661326b64ea59a1553",
-    "url": "/fake-notification-web-app/static/js/main.43661326.chunk.js"
+    "revision": "c63ed96aa87884c1a347",
+    "url": "/fake-notification-web-app/static/js/main.c63ed96a.chunk.js"
   },
   {
     "revision": "a640253c6771f44b5ddc",
     "url": "/fake-notification-web-app/static/js/1.a640253c.chunk.js"
   },
   {
-    "revision": "43661326b64ea59a1553",
-    "url": "/fake-notification-web-app/static/css/main.47aad9bf.chunk.css"
+    "revision": "c63ed96aa87884c1a347",
+    "url": "/fake-notification-web-app/static/css/main.c3340cec.chunk.css"
   },
   {
-    "revision": "8289959d335dae0da792bea60eee5f8e",
+    "revision": "301a9b8cc5ef942e6d29c2711e547169",
     "url": "/fake-notification-web-app/index.html"
   }
 ];

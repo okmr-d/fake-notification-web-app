@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/fake-notification-web-app/precache-manifest.d6a2d4ae741068fc6b983988ae340958.js"
+  "/fake-notification-web-app/precache-manifest.5d2b68fdb13958de90dd5ac476bf8d48.js"
 );
 
 workbox.clientsClaim();
