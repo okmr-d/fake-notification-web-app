@@ -188,7 +188,7 @@ class App extends Component {
   }
 
   startTwitterMode() {
-    const tweet = window.prompt('表示したい文章を入力してください')
+    const tweet = window.prompt('ツイートを入力してください')
     if (tweet) {
       this.setState({
         notificationList: [],
@@ -301,7 +301,7 @@ class App extends Component {
                     className="button"
                     onClick={this.startTwitterMode}
                   >
-                    いいねたくさんモード
+                    Twitterいいねたくさんモード
                   </a>
                   <small style={{color: 'grey'}}>※ 動きがカクカクする場合は「低電力モードを解除」や「他のアプリを終了」をお試しください。</small>
                 </div>
@@ -309,8 +309,6 @@ class App extends Component {
               <div className="modal__card">
                 <div className="modal__card__body">
                   <p style={{ lineHeight: '40px', fontWeight: 800 }}>《録画した画面をシェアして楽しもう！》</p>
-                  <p><small>「 #通知止まらんw 」をつけてツイートしてね！</small></p>
-                  <br />
                   <a
                     onClick={() => this.setState({
                       isOpenMenu: false,
@@ -325,8 +323,10 @@ class App extends Component {
                   </a>
                   <br />
                   <br />
+                  <p><small>「 #通知止まらんw 」をつけてツイートしてね！</small></p>
+                  <br />
                   <a
-                    href="https://twitter.com/share?url=https://bit.ly/2Bvyx3i&amp;text=+%0a%23%e9%80%9a%e7%9f%a5%e6%ad%a2%e3%81%be%e3%82%89%e3%82%93w"
+                    href="https://twitter.com/share?url=https://bit.ly/2Bvyx3i&amp;text=%e9%80%9a%e7%9f%a5%e6%ad%a2%e3%81%be%e3%82%89%e3%82%93www%e3%82%92%e4%bd%93%e9%a8%93%e3%81%a7%e3%81%8d%e3%82%8b%e3%82%88%ef%bc%81%0a%23%e9%80%9a%e7%9f%a5%e6%ad%a2%e3%81%be%e3%82%89%e3%82%93w"
                     onclick="window.open(encodeURI(decodeURI(this.href)), 'TWwindow', 'width=560, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;"
                     target="_blank"
                     className="share-tweet"
@@ -366,11 +366,11 @@ class App extends Component {
             />
             <div className="modal__content">
               <div className="modal__card explanation">
-                <div className="modal__card__title">はじめに</div>
+                <div className="modal__card__title">全画面で表示するには</div>
                 <div className="modal__card__body">
-                  <p>【注意】iPhone Safariでご覧ください。<br /><small>iPhone以外では正常に動作しない場合があります。</small></p>
-                  <p>① <span className="share-icon" /> から <span className="add-home-icon" /> を選択します。</p>
-                  <p>② ホーム画面に追加されたアプリを開くと全画面表示になります。</p>
+                  <p><span className="share-icon" /> から <span className="add-home-icon" /> を押して「ホーム画面に追加」してください。</p>
+                  <br />
+                  <p><small>【注意】iPhone Safariでご覧ください。</small></p>
                   <a
                     style={{display: 'inline-block', padding: '10px', color: 'grey'}}
                     onClick={() => this.setState({
