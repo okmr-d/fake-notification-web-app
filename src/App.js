@@ -368,9 +368,10 @@ class App extends Component {
               <div className="modal__card explanation">
                 <div className="modal__card__title">全画面で表示するには</div>
                 <div className="modal__card__body">
-                  <p><span className="share-icon" /> から <span className="add-home-icon" /> を押して「ホーム画面に追加」してください。</p>
-                  <br />
                   <p><small>【注意】iPhone Safariでご覧ください。</small></p>
+                  <p><small>Twitterアプリでご覧の方は <span className="safari-icon" /> から開いてください。</small></p>
+                  <p>◆ Safariの <span className="share-icon" /> から <span className="add-home-icon" /> を押して「ホーム画面に追加」してください。</p>
+                  <br />
                   <a
                     style={{display: 'inline-block', padding: '10px', color: 'grey'}}
                     onClick={() => this.setState({
